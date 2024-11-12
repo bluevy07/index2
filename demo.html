@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MSProtienshop</title>
+    <link rel="icon" href="D:\ptshop.png" type="image/x-icon">
+    <style>
+        /* General Styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #1d1d1d;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .logo {
+            font-family: cursive;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .search-bar input[type="text"] {
+            width: 600px;
+            padding: 5px;
+            max-width: 100%;
+        }
+
+        .header-img, .cart-icon, .profile-img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #ddd;
+            transition: transform 0.3s ease;
+            flex-wrap: wrap;
+        }
+
+        .content:hover {
+            transform: scale(1.05);
+        }
+
+        .items {
+            margin: 10px 0;
+            text-decoration: none;
+            color: #1d1d1d;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgb(16, 16, 16);
+            color: #fff9f9;
+        }
+
+        .socialmedia img {
+            width: 25px;
+            height: 25px;
+            margin: 0 5px;
+        }
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar a {
+                padding: 10px;
+            }
+
+            .content {
+                flex-direction: column;
+            }
+
+            .search-bar input[type="text"] {
+                width: 100%;
+            }
+
+            .footer {
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .content img {
+                width: 100%;
+                height: auto;
+            }
+
+            .navbar a {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .search-bar input[type="text"] {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Protein Shop
+        <div style="text-align: left;">
+            <a href="product.html">
+                <img src="D:\ptshop.png" alt="Logo" class="header-img">
+            </a>
+        </div>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search for products...">
+    </div>
+    <div>
+        <img src="D:\cart.png" class="cart-icon" alt="Cart">
+    </div>
+    <div>
+        <img src="D:\pfp img.png" alt="Profile" class="profile-img">
+    </div>
+</header>
+
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about-us">About Us</a>
+    <a href="#service">Service</a>
+    <a href="#contacts">Contacts</a>
+</div>
+
+<div class="content">
+    <a href="file:///D:/adp/creatinemonhydrate.html">
+        <img src="D:\creatine.png" alt="Creatine Monohydrate" width="200" height="160">
+    </a>
+    <h2 class="items">Creatine Monohydrate</h2>
+    <h3 class="items">500-1500$</h3>
+</div>
+
+<div class="content">
+    <a href="file:///D:/adp/trainer.html">
+        <img src="D:\trainer.jpg" alt="Trainer" width="200" height="160">
+    </a>
+    <h2 class="items">Trainer</h2>
+    <h3 class="items">1000-2500$</h3>
+</div>
+
+<div class="content">
+    <a href="file:///D:/adp/suplement.html">
+        <img src="D:\Sup.png" alt="Supplement" width="200" height="160">
+    </a>
+    <h2 class="items">Supplement</h2>
+    <h3 class="items">1000-2500$</h3>
+</div>
+
+<div class="content">
+    <a href="file:///D:/adp/equipment.html">
+        <img src="D:\equ.png" alt="Equipment" width="200" height="160">
+    </a>
+    <h2 class="items">Equipment</h2>
+    <h3 class="items">1000-2500$</h3>
+</div>
+
+<div class="content">
+    <a href="file:///D:/adp/protien.html">
+        <img src="D:\prt.png" alt="Protein Powder" width="200" height="160">
+    </a>
+    <h2 class="items">Protein Powder</h2>
+    <h3 class="items">1000-2500$</h3>
+</div>
+
+<div class="content">
+    <a href="file:///D:/adp/chat.html">
+        <img src="D:\chat.png" alt="Chat" width="200" height="160">
+    </a>
+    <h2 class="items">Chat</h2>
+    <h3 class="items">5$</h3>
+</div>
+
+<footer class="footer">
+    <p>Follow us on:</p>
+    <div class="socialmedia">
+        <a href="https://www.facebook.com" target="_blank"><img src="D:\fb.jpeg" alt="Facebook"></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="D:\x.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="D:\insta.jpeg" alt="Instagram"></a>
+        <a href="https://www.linkedin.com" target="_blank"><img src="D:\lin.png" alt="LinkedIn"></a>
+    </div>
+    <div>
+        <p>Headquarters<br>1234 Elmwood Avenue, Apt. 56B, Springfield, IL 62704, United States</p>
+    </div>
+</footer>
+
+</body>
+</html>

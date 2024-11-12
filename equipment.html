@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Display</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /*margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;*/
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 12000px;
+            padding: 2px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            font-family: cursive;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 120px;
+            height: 40px;
+        }
+
+        .search-bar input[type="text"] {
+            width: 600px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .icon img {
+            width: 50px;
+            height: 40px;
+            cursor: pointer;
+        }
+        
+        .container {
+            display: flex;
+            gap: 60px;
+            padding: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 250px;
+            padding: 80px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 1px solid #ddd;
+        }
+        
+        .content:hover {
+            transform: scale(1.2);
+        }
+
+        .product-image {
+            width: 200px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .item-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        
+        .item-price {
+            font-size: 16px;
+            font-weight: 400;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .product-button {
+            border-radius: 90px;
+            height: 26px;
+            object-fit: contain;
+            cursor: pointer;
+        
+        }
+        .product-button:hover{
+            color: yellow;
+            background-color: black;
+        }
+        .socialmedia{
+            align-items: center;
+        }
+
+        
+        .footer {
+            background-color: #ffffff;
+            color: rgb(10, 10, 10);
+            padding: 100px 0;
+            width: 100%;
+
+        }
+        .product-button2 {
+            width: 85px;
+            height: 70px;
+            object-fit: contain;
+            cursor: pointer;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Protein Shop
+            <a href="product.html">
+                <img src="D:\ptshop.png" alt="Protein Shop Logo">
+            </a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+        </div>
+        <div class="icon">
+            <img src="D:\cart.png" alt="Cart Icon">
+        </div>
+        <div class="icon">
+            <img src="D:\pfp img.png" alt="Profile Icon">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <img src="D:\equ1.png" alt="Creatine Monohydrate" class="product-image">
+            <h2 class="item-title">Whey Protien Isolate</h2>
+            <h3 class="item-price">1000$</h3>
+            <Button class="product-button">Add to cart</Button>
+            <img src="D:\bn2.png" alt="Button" class="product-button2" style="margin-top: 0cm;">
+        </div>
+
+        <div class="content">
+            <img src="D:\equ2.jpeg" alt="Creatine Hydrochloride" class="product-image">
+            <h2 class="item-title">Whey Protien Concenrate</h2>
+            <h3 class="item-price">1500$</h3>
+            <Button class="product-button">Add to cart</Button>
+            <img src="D:\bn2.png" alt="Button" class="product-button2" style="margin-top: 0cm;">
+        </div>
+
+        <div class="content">
+            <img src="D:\equ3.png" alt="Liquid Creatine Hydrate" class="product-image">
+            <h2 class="item-title">Whey Protien Isoconcenrate</h2>
+            <h3 class="item-price">2000$</h3>
+            <Button class="product-button">Add to cart</Button>
+            <img src="D:\bn2.png" alt="Button" class="product-button2" style="margin-top: 0cm;">
+
+        </div>
+        <div class="content">
+            <img src="D:\equ4.png" alt="Liquid Creatine Hydrate" class="product-image">
+            <h2 class="item-title">Whey Protien Isoconcenrate</h2>
+            <h3 class="item-price">2000$</h3>
+            <Button class="product-button">Add to cart</Button>
+            <img src="D:\bn2.png" alt="Button" class="product-button2" style="margin-top: 0cm;">
+
+        </div>
+        <div class="content">
+            <img src="D:\equ5.jpeg" alt="Liquid Creatine Hydrate" class="product-image">
+            <h2 class="item-title">Whey Protien Isoconcenrate</h2>
+            <h3 class="item-price">2000$</h3>
+            <Button class="product-button">Add to cart</Button>
+            <img src="D:\bn2.png" alt="Button" class="product-button2" style="margin-top: 0cm;">
+
+        </div>
+
+    </div>
+</body>
+<footer style="background-color: rgb(0, 0, 0);color:rgb(255, 255, 255);width: 100%;"> 
+  <p> <p style="font-weight: bold;text-align:left">Follow us on:</p>
+        <div class="socialmedia" style="text-align: left;">
+            <a href="https://www.facebook.com" target="_blank"><img src="D:\fb.jpeg" width="25cm" height="25cm"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="D:\x.png" width="25cm" height="25cm"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="D:\insta.jpeg" width="25cm" height="25cm"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="D:\lin.png" width="25cm" height="25cm"></a>
+        </div>
+        <div style="text-align: right;">
+            <h1 style="font-size:small">HeadQuaters<br>1234 Elmwood Avenue
+                Apt. 56B
+                Springfield, IL 62704
+                United States</h1>
+        </div>
+</diV>
+</p>
+</footer>
+</html>
+
